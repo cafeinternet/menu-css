@@ -1,0 +1,23 @@
+.menu  {
+    display: none;
+ 
+    flex-direction: column;
+}
+
+.item{
+    background-color: rgba(255, 0, 106, 0.876);
+    width: 100%;
+    padding-top:100px ;
+    padding-bottom: 100px;
+    text-align: center ;
+    font-family: 'Audiowide', cursive;
+    font-size: 3em;    
+}
+
+.item:hover{
+    background-color: blueviolet;
+    color: cyan;
+    filter: drop-shadow(0 -6mm 4mm rgb(18, 210, 0));
+}
+
+
