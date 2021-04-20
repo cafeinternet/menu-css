@@ -1,10 +1,19 @@
+:root{
+    --colordefono: #007ACC;
+}
+
+body{
+ background-color: darkturquoise;
+
+
+}
 .menu  {
   
     flex-direction: column;
 }
 
 .item{
-    background-color: rgba(255, 0, 106, 0.876);
+    background-color:var(--colordefono);
     width: 100%;
     padding-top:100px ;
     padding-bottom: 100px;
@@ -17,7 +26,9 @@
     background-color: blueviolet;
     color: cyan;
     filter: drop-shadow(0 -6mm 4mm rgb(18, 210, 0));
-    transition-delay: 2s
+    transform: skewy(20deg);
+    transition-duration: 0.5s
+
 
 }
 
@@ -26,20 +37,47 @@
 #menu {
     position: absolute;
     visibility: hidden;
-
   }
   
   #A3 {
-    position: fixed;
-    transition-delay: 3s
+    display: none;
   }
   
   #menu:checked~#A3 {
-    position: fixed;
-    left: -176px;
-    
-    
+    display: block;
   }
   #menu:checked~ * h1 {
     color: whitesmoke;
   }
+
+.icono{
+    width: 100px;
+    height: 20px;
+    background-color: darkblue;
+}
+
+.icono::after{
+    content: ".";
+    position:relative;
+    top:300px;
+    width: 100px;
+    height: 20px;
+    background-color: darkblue;
+    
+}
+
+.name{
+    border: 5px rgb(0, 234, 255) dotted;
+    width: 80%;
+    border-radius: 30px;
+    background-color: violet;
+   
+}
+
+.name:hover{
+    filter: drop-shadow(10px 10px 10px rgb(162, 245, 162));
+    transition-duration: 0.5s
+}
+.name:active {
+    height: 606px;
+}
