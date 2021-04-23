@@ -46,7 +46,7 @@ body{
   #menu:checked~#A3 {
     display: block;
   }
-  #menu:checked~ * h1 {
+  #menu:checked~ * .icono {
     color: whitesmoke;
   }
 
